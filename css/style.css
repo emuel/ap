@@ -1,0 +1,20 @@
+ .img {
+            width: 200px;
+            height: 300px;
+            float: left;
+            margin-right: 2px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            display: flex;
+            margin: auto;
+        }
+        #mainDir{margin: auto; 
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;}

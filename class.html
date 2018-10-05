@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
+<link href="css/style.css" rel="stylesheet">  
+</head>
+
+<body>
+
+    <section>
+        
+        <div id="mainDir">
+
+
+        </div>
+    </section>
+    
+</body>
+</html>
+
+
+   
+    
+    
+  
+
+
+
+
+    <script>
+        let studentList = ["emuel"];
+        let dirList = ["emuel.html"]; 
+        $(document).ready(function() {
+            for (i = 0; i < dirList.length; i++) {
+                $('#mainDir').append("<div id=" + studentList[i] + " class='img'></div>");
+            }
+            for (i = 0; i < dirList.length; i++) {
+                $('#' + studentList[i]).load(dirList[i]);
+            }
+        });
+    </script>
